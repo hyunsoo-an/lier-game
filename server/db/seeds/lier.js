@@ -1,11 +1,9 @@
 export async function seed(knex) {
   // Deletes ALL existing entries
-  await knex('wcup').del()
+  await knex('lier').del()
 
   // Inserts seed entries
-  await knex('wcup').insert([
-    { id: 1, name: 'banana' },
-    { id: 2, name: 'apple' },
-    { id: 3, name: 'feijoa' },
+  await knex('lier').insert([
+    { id: 1, word1: 'banana', word2: 'apple', topic: 'fruit' },
   ])
 }
