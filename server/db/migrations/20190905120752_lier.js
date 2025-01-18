@@ -4,7 +4,6 @@ export async function up(knex) {
     table.string('word1')
     table.string('word2')
     table.string('topic')
-    table.string()
   })
 }
 
